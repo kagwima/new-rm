@@ -25,9 +25,9 @@
     <header class="rm-page-header">
         <nav class="nav-bar">
             <div class="nav-bar-sm-icons">
-                <img src="https://i.imgur.com/bTbfuF3.png">
-                <img src="https://i.imgur.com/lIcT9EK.png">
-                <img src="https://i.imgur.com/3sQev97.png">
+                <a href="https://twitter.com/richmansionKE"><img src="https://i.imgur.com/bTbfuF3.png"></a>
+                <a href="https://www.facebook.com/richmansionKE/"><img src="https://i.imgur.com/lIcT9EK.png"></a>
+                <a href="https://www.instagram.com/richmansion.ke/"><img src="https://i.imgur.com/3sQev97.png"></a>
             </div>
             <div class="search-btn">
                 <input type="search" placeholder="  Search..." autofocus>
@@ -66,9 +66,9 @@
                     <a href="#contact-us-page">Contacts</a>
                 </div>
                 <div class="slide-menu-sm-icons">
-                    <img src="https://i.imgur.com/bTbfuF3.png">
-                    <img src="https://i.imgur.com/lIcT9EK.png">
-                    <img src="https://i.imgur.com/3sQev97.png">
+                    <a href="https://twitter.com/richmansionKE"><img src="https://i.imgur.com/bTbfuF3.png"></a>
+                    <a href="https://www.facebook.com/richmansionKE/"><img src="https://i.imgur.com/lIcT9EK.png"></a>
+                    <a href="https://www.instagram.com/richmansion.ke/"><img src="https://i.imgur.com/3sQev97.png"></a>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@
                 </div>
                 <div class="about-us-text-2">
                     <p>We are a Registered company in Kenya offering Advertising and Public Relations Services to businesses and individuals, with a desire to reach their potential audiences and clientele through strategic & well laid out marketing plan
-                        and strategies
+                        & strategies
                     </p>
                 </div>
             </div>
@@ -249,29 +249,41 @@
         <div id="contact-us-page"></div>
         <div class="contact-us-page">
             <p>Contacts</p>
-            <form action="https://formspree.io/maynnddn" method="POST" class="form-container">
+            <form id="contactform" method="POST" class="form-container">
 
                 <div class="input-field-0">
-                    <input type="text" placeholder="  First Name:" name="name" required>
+                    <input type="text" name="name" placeholder="  First Name:" required>
                 </div>
 
                 <div class="input-field-1">
-                    <input type="text" placeholder="  Last Name:" name="name" required>
+                    <input type="text" name="name" placeholder="  Last Name:" required>
+                    <input type="hidden" name="_subject" value="Website lead" />
                 </div>
-                <div class="input-field-5">
-                    <input type="number" placeholder="  +(254) 700 000 000" required>
-                </div>
+
                 <div class="input-field-2">
-                    <input type="text" placeholder="  Message:" required>
+                    <textarea type="text" name="message" placeholder="  Message:"></textarea>
                 </div>
+
+
+
                 <div class="input-field-3">
                     <input type="email" name="_replyto" placeholder="  Email:" required>
                 </div>
+
                 <div class="input-field-4">
                     <input type="submit" value="Send" class="button-1" placeholder="SEND">
                 </div>
+                <br>
+                <input type="text" name="_gotcha" style="display:none" />
 
             </form>
+
+            <script>
+                var contactform = document.getElementById('contactform');
+                contactform.setAttribute('action', 'https://formspree.io/maynnddn');
+            </script>
+
+
             <div class="contact-location"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.814936231867!2d36.81767861430514!3d-1.2850019359861125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6cc5cfba9%3A0x59aad9db8b6b47a3!2sPioneer%20House%2C%20Kenyatta%20Avenue%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1569932526186!5m2!1sen!2ske"
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
@@ -297,12 +309,23 @@
                     <div class="footer-bullet-2 rotated"></div>
                     <div class="footer-text-heading">Subscribe Now</div>
                     <div class="footer-text">Get the latest updates and Offers</div>
-                    <div>
-                        <input class="footer-input" type="email" placeholder="  Enter Your Email" required>
-                    </div>
-                    <div>
-                        <button class="button-2">SEND</button>
-                    </div>
+                    <form id="contactform-2" method="POST">
+                        <div class="footer-input">
+                            <input type="email" name="_replyto" placeholder="  Email:" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Send" class="button-2" placeholder="SEND">
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="hidden" name="_subject" value="Website email-lead" />
+                        </div>
+                    </form>
+
+
+                    <script>
+                        var contactform = document.getElementById('contactform-2');
+                        contactform.setAttribute('action', 'https://formspree.io/mbjlglvg');
+                    </script>
+
                 </div>
 
                 <div class="page-links footer-3">
@@ -328,9 +351,9 @@
             <div class="last-footer-section">
                 <div class="rights-rm">©2019 All Rights Reserved <br> Built with💛by Mansion Arts</div>
                 <div class="social-footer">
-                    <img src="https://i.imgur.com/bTbfuF3.png">
-                    <img src="https://i.imgur.com/lIcT9EK.png">
-                    <img src="https://i.imgur.com/3sQev97.png">
+                    <a href="https://twitter.com/richmansionKE/"><img src="https://i.imgur.com/bTbfuF3.png"></a>
+                    <a href="https://www.facebook.com/richmansionKE/"><img src="https://i.imgur.com/lIcT9EK.png"></a>
+                    <a href="https://www.instagram.com/richmansion.ke/"><img src="https://i.imgur.com/3sQev97.png"></a>
                 </div>
             </div>
         </div>
